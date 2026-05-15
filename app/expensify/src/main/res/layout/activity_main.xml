@@ -55,17 +55,26 @@
         android:hint="Số tiền"
         android:inputType="numberDecimal" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
         <Spinner
             android:id="@+id/spinnerExpenseCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:entries="@array/expense_categories" />
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/switchExpensePaid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đã trả" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchExpensePaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đã trả" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/buttonAddExpense"
