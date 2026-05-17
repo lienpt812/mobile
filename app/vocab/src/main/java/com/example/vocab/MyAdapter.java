@@ -58,6 +58,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             textView.setOnClickListener(v -> {
                 int position = getAdapterPosition();
                 if (position != RecyclerView.NO_POSITION) {
+//                    AlertDialog.Builder builder = new AlertDialog.Builder(context);
+//                    builder.setTitle(data.get(position).term);
+//                    builder.setMessage(data.get(position).def + "\n" +
+//                            data.get(position).ipa);
+//                    builder.setCancelable(false);
+//                    builder.setPositiveButton("Đóng", (dialog, which) ->
+//                            dialog.dismiss());
+//                    AlertDialog alertDialog = builder.create();
+//                    alertDialog.show();
 
                     if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
                         Intent intent = new Intent(context, VocabDetailActivity.class);

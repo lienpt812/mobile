@@ -21,6 +21,6 @@ public class VocabDetailActivity extends AppCompatActivity {
         ViewPager2 viewPager = findViewById(R.id.viewPager);
         VocabPagerAdapter adapter = new VocabPagerAdapter(this, vocabList);
         viewPager.setAdapter(adapter);
-        viewPager.setCurrentItem(position);
+        viewPager.setCurrentItem(position, false);
     }
 }
