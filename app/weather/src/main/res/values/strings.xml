@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Weather</string>
+    <string name="refresh">Làm mới</string>
+    <string name="settings">Cài đặt</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="temperature_unit">Đơn vị nhiệt độ</string>
+    <string name="feels_like">Cảm nhận</string>
+    <string name="pressure">Áp suất</string>
+
+    <string-array name="language_entries">
+        <item>Tiếng Việt</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>vi</item>
+        <item>en</item>
+    </string-array>
+
+    <string-array name="temperature_unit_entries">
+        <item>Độ C</item>
+        <item>Độ F</item>
+    </string-array>
+
+    <string-array name="temperature_unit_values">
+        <item>c</item>
+        <item>f</item>
+    </string-array>
 </resources>

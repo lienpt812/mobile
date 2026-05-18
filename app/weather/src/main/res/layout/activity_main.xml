@@ -17,6 +17,27 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/refreshButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refresh" />
+
+                <Button
+                    android:id="@+id/settingsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/settings" />
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/locationTextView"
                 android:layout_width="wrap_content"
@@ -44,7 +65,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="🌡️°C"
-                    android:textSize="50sp" />
+                    android:textSize="20sp" />
                 <TextView
                     android:id="@+id/humidTextView"
                     android:layout_width="0dp"
@@ -52,7 +73,30 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="💧%"
-                    android:textSize="50sp" />
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/appTempTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/feels_like"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/pressureTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/pressure"
+                    android:textSize="20sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -66,7 +110,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="☁️%"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
                 <TextView
                     android:id="@+id/rainTextView"
                     android:layout_width="0dp"
@@ -74,7 +118,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="🌧️mm"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
                 <TextView
                     android:id="@+id/windTextView"
                     android:layout_width="0dp"
@@ -82,7 +126,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="🌪️ km/h"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
         <ProgressBar
